@@ -1,0 +1,45 @@
+.content-deals{
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'd1 d2 d3'
+    'd4 d5 d6';
+    background: grey;
+    gap: 15px;
+}
+.d1{
+    justify-content: center;
+    & img{
+        grid-area: d1;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}
+.d2{
+    justify-content: center;
+    & img{
+        grid-area: d2;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}
+.d3{
+    justify-content: center;
+    & img{
+        grid-area: d3;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}
+.d4{
+    justify-content: center;
+    & img{
+        grid-area: d4;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}

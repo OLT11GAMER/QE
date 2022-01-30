@@ -1,0 +1,29 @@
+.map{
+    display: flex;
+    padding: 2rem;
+
+
+    .map-text{
+        padding: 1rem;
+  
+    }
+    .iframe-class {
+        align-self: center;
+        min-width: 600px;
+        max-width: 1000px;
+        height: 500px;
+
+    }
+
+}
+@media only screen and (max-width: 960px){
+    .map{
+        flex-direction: column;
+    }
+    .iframe-class {
+
+        width: fill;
+
+    }
+    
+}
