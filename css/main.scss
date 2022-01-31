@@ -1,4 +1,10 @@
 $footer-bg: grey;
+$green-bg: #7ba519;
+$gold-bg: #fbc11a;
+$light-gold:#efca66;
+$light-green-bg:#b7cb4f;
+$lighter-green-bg:#b1ca80;
+$lighter-gold-bg:#ffffaf;
 
 @import "./nav";
 @import "./content";
@@ -6,7 +12,6 @@ $footer-bg: grey;
 @import "./content-about";
 @import "./content-deals";
 @import "./content-contact";
-@import "./imageslider";
 
 
 *,
@@ -15,6 +20,9 @@ $footer-bg: grey;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body{     
+    overflow:scroll
 }
 
 

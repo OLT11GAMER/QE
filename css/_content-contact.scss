@@ -1,0 +1,106 @@
+.content-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 2fr;
+    grid-template-areas: 'contact1 contact2'
+    'contact3 contact3';
+    gap: 0px;
+
+
+}
+.contact1{
+    background-color: $lighter-green-bg;
+    display: grid;
+    grid-area: contact1;
+    gap: 0px;
+    padding: 50px;
+    & h1{
+        color: $lighter-gold-bg;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    & ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+        & li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+            & img{
+      
+                width: 40px;
+                height: auto;
+            }
+            .snapchat:hover{
+                position: absolute;
+
+                align-self: center;
+                justify-self: center;
+                height: 500px;
+                width: auto;
+
+
+            }
+        }
+    }
+}
+.contact2{
+    background-color: $lighter-gold-bg;
+    display: grid;
+    grid-area: contact2;
+    gap: 0px;
+    margin: 0px;
+    padding: 50px;
+    align-items: baseline;
+
+
+    color: black;
+   
+    & h1{
+        color: black;
+    }
+
+}
+.contact3{
+    display: grid;
+    grid-area: contact3;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 50px;
+
+}
+.contact-form{
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+  
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}

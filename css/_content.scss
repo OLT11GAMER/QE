@@ -21,7 +21,8 @@ h1{
 
 
 .a1{
-    padding-right: 3rem;
+    padding-right: 5rem;
+    padding-right: 5rem;
     padding: 2.5rem;
     display: flex;
     height: 300px;
@@ -31,9 +32,11 @@ h1{
     object-fit: cover;
     overflow: hidden;
     
-    background-color: $bg-home-1;
+    background-color: $lighter-green-bg;
+    background-blend-mode: darken;
     & ul {
         list-style: none;
+        color: aliceblue;
         padding: 0;
       }
 
@@ -45,10 +48,11 @@ h1{
 
         object-fit: cover;
 
+
     }
 }
 .a2{
-    margin: 2rem;
+
     padding: 2.5rem;
     display: flex;
     height: 300px;
@@ -56,11 +60,13 @@ h1{
 
 
     justify-content: center;
-    min-height: 10rem;
+  
     gap: 3rem;
     overflow: hidden;
-    background-color: $bg-home-2;
-
+    background-color: $lighter-gold-bg;
+    & div{
+        min-width: 500px;
+    }
     & img{
   
         height: 200%;

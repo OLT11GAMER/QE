@@ -6,7 +6,6 @@
     margin: 2rem auto;
     max-width: 1200px;
     background-color: white;
-
     grid-template-areas: 'd1 d2 d3 d4'
     'd5 d6 d7 d8'
     'd9 d10 d11 d12';
@@ -16,7 +15,7 @@
 .d1{
     
     grid-area: d1;
-    background-color: aliceblue;
+    background-color:$lighter-gold-bg;
     border-radius: 1rem;
     overflow: hidden;
 
@@ -39,7 +38,7 @@
 }
 .d2{
     grid-area: d2;
-    background-color: aliceblue;
+    background-color: $lighter-green-bg;
     border-radius: 1rem;
 
     overflow: hidden;
@@ -62,7 +61,7 @@
  }
 .d3{
     grid-area: d3;
-    background-color: aliceblue;
+    background-color: $lighter-gold-bg;
     border-radius: 1rem;
     overflow: hidden;
 
@@ -85,7 +84,7 @@
  }
 .d4{
     grid-area: d4;
-    background-color: aliceblue;
+    background-color: $lighter-green-bg;
     border-radius: 1rem;
 
     overflow: hidden;
@@ -105,4 +104,27 @@
      display: flex;
      justify-content: space-between;
 
- }
+}
+@media only screen and (max-width: 560px) {
+    .content-deals{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        background-color: white;
+        grid-template-areas: 'd1'
+        'd2'
+        'd3'
+        'd4'
+        'd5';
+        margin: 2rem;
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    
+    }
+
+}
