@@ -158,6 +158,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-image: url("/images/background.jpeg");
 }
 
 h1 {
@@ -304,7 +305,6 @@ h1 {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: 'd1 d2 d3' 'd4 d5 d6';
-  background: grey;
   gap: 15px;
 }
 
@@ -692,6 +692,19 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-areas: 'contact1' 'contact2' 'contact3';
+    gap: 0px;
+  }
 }
 
 *,

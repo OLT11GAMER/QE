@@ -4,8 +4,9 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 'd1 d2 d3'
     'd4 d5 d6';
-    background: grey;
+
     gap: 15px;
+
 }
 .d1{
     justify-content: center;

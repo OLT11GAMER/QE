@@ -104,3 +104,18 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .content-contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 2fr;
+        grid-template-areas: 'contact1'
+        'contact2'
+        'contact3';
+        gap: 0px;
+    }
+    
+}
